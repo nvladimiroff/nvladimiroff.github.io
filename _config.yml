@@ -1,8 +1,6 @@
 # Setup
-title:               My blog!
-tagline:             'My blog!'
-description:         'My blog!'
-url:                 https://nvladimiroff.github.io
+title:               Code and Cake
+url:                 https://codeandcake.dev
 baseurl:             ''
 paginate:            5
 permalink:           pretty
