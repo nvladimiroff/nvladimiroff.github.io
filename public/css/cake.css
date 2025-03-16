@@ -1,0 +1,97 @@
+* {
+  --light-pink: #ffe0fa;
+  --pink: hsl(299, 70%, 75%);
+  --purple: #B388EB;
+  --blue: #8093F1;
+  --light-blue: #72DDF7;
+  --light-gray: #efefef;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Core blog styles */
+
+#main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem);
+  padding-bottom: 4rem;
+}
+
+a, a:visited {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
+hr {
+  width: 250px;
+  margin-inline-start: 0;
+  border: 2px dashed var(--light-gray);
+}
+
+/* Elements */
+
+.title {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: var(--blue);
+  width: calc(100vw - 4rem);
+
+  padding: 0.5rem 2rem 3rem 2rem;
+
+  /* https://css-generators.com/wavy-shapes/ */
+  mask:
+    radial-gradient(56.6px at 50% calc(100% - 78px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(56.6px at 50% calc(100% + 48px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .masthead-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+
+  height: 4rem;
+  width: 100vw;
+  /* https://css-generators.com/wavy-shapes/ */
+  mask:
+    radial-gradient(56.6px at 50% 78px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(56.6px at 50% -48px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+
+  background-color: var(--pink);
+}
+
+.content {
+  margin: 0rem 5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+/* Posts */
+
+.post-date {
+  font-size: 1rem;
+  color: rgb(90, 90, 90);
+}
+
+.post-title {
+
+}
