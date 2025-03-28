@@ -111,3 +111,13 @@ code {
 p {
   padding: 1rem 0rem;
 }
+
+.post-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  max-width: 50ch;
+  min-width: 20ch;
+}
