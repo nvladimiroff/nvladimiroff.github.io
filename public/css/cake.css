@@ -14,6 +14,8 @@ body {
 
   font-family: "Nunito", sans-serif;
   font-size: calc(1em + 1vw);
+
+  overflow: hidden;
 }
 
 /* Core blog styles */
@@ -40,6 +42,10 @@ hr {
 
 h4 {
   text-align: center;
+}
+
+pre {
+  overflow: scroll;
 }
 
 /* Elements */
