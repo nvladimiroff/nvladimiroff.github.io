@@ -13,7 +13,7 @@ body {
   overscroll-behavior-y: none;
 
   font-family: "Nunito", sans-serif;
-  font-size: calc(1em + 1vw);
+  font-size: calc(1em + 0.8vw);
 
   overflow-x: hidden;
 }
@@ -38,6 +38,12 @@ hr {
   width: 250px;
   margin-inline-start: 0;
   border: 2px dashed var(--light-gray);
+}
+
+h2 {
+  padding-top: 1.6rem;
+  border-bottom: 2px dashed var(--light-gray);
+  width: fit-content;
 }
 
 h4 {
