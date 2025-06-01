@@ -4,7 +4,7 @@ layout: default
 
 <div class="post-container">
   <div class="post">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title" style="view-transition-name: {{page.slug}}">{{ page.title }}</h1>
     <h3 class="post-subtitle">{{ page.subtitle }}</h1>
     <span class="post-date">{{ page.date | date_to_string }}</span>
     <hr/>

@@ -7,7 +7,7 @@ title: Home
   {% for post in paginator.posts %}
     {% if post.state != 'hidden' %}
       <div class="post-feed">
-        <h1 class="post-title">
+        <h1 class="post-title" style="view-transition-name: {{post.slug}}">
           <a href="{{ post.url | absolute_url }}">
             {{ post.title }}
           </a>

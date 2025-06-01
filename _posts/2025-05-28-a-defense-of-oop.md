@@ -9,7 +9,7 @@ But I think this is the wrong direction for our craft to go. OOP is still a powe
 
 ## What even is OOP anyway?
 
-Object-orientated programming is the practice of combining data and behavior into units called _objects_, and hiding all of that behind _message-passing_. Some languages map message-passing to functions calls (like Java or C#) and others take message-passing a bit more literally (like Ruby or Objective-C).
+Object-orientated programming is the programming style of combining data and behavior into units called _objects_, and hiding all of that behind _message-passing_. Some languages map message-passing to functions calls (like Java or C#) and others take message-passing a bit more literally (like Ruby or Objective-C).
 
 I think this is a fantastic style of programming because it lets you make powerful abstractions about the relationship between your data and behavior, and its relationship to the outside world.
 

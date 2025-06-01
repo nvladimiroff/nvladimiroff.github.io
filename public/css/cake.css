@@ -18,6 +18,47 @@ body {
   overflow-x: hidden;
 }
 
+/* Fancy view transition animations */
+
+@media not (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+::view-transition-old(*),
+::view-transition-new(*) {
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+@keyframes change-color {
+  from {
+    opacity: 0;
+    transition: color;
+  }
+  to {
+    opacity: 1;
+    transition: color;
+  }
+}
+
+::view-transition-new(.post-title), ::view-transition-old(.post-title) {
+  /* https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/ */
+  height: 100%;
+  animation-duration: 0.3s;
+  mix-blend-mode: multiply;
+}
+
+/*::view-transition-old(.post-title) {
+  animation: slide-out 0.5s;
+}*/
+
+
 /* Core blog styles */
 
 #main {
@@ -27,6 +68,7 @@ body {
   min-height: 100vh;
 
   padding-bottom: 4em;
+
 }
 
 a, a:visited {
@@ -68,8 +110,10 @@ code {
 
   background-color: var(--blue);
   width: 100vw;
-
   padding: 0.5rem 2rem 3rem 2rem;
+
+  view-transition-name: masthead;
+
 
   /* https://css-generators.com/wavy-shapes/ */
   mask:
@@ -104,7 +148,10 @@ code {
 }
 
 .content {
-  margin: 0 1.2em 0em 1.2em;
+  max-width: 50ch;
+  min-width: 20ch;
+  padding: 0 1.2em 0em 1.2em;
+  margin: auto;
 }
 
 /* Posts */
@@ -123,7 +170,15 @@ p {
   justify-content: center;
 }
 
+.post-title {
+  view-transition-class: post-title;
+  width: fit-content;
+}
+
+.posts {
+  view-transition-name: posts;
+}
+
 .post {
-  max-width: 50ch;
-  min-width: 20ch;
+  width: 100%;
 }
