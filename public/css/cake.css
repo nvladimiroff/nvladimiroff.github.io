@@ -136,6 +136,12 @@ code {
   margin: auto;
 }
 
+.links {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
 /* Posts */
 
 .post-date {

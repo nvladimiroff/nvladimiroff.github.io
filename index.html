@@ -4,18 +4,16 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
-    {% if post.state != 'hidden' %}
-      <div class="post-feed">
-        <h1 class="post-title" style="view-transition-name: {{post.slug}}">
-          <a href="{{ post.url | absolute_url }}">
-            {{ post.title }}
-          </a>
-        </h1>
+  {% for post in site.posts %}
+    <div class="post-feed">
+      <h1 class="post-title" style="view-transition-name: {{post.slug}}">
+        <a href="{{ post.url | absolute_url }}">
+          {{ post.title }}
+        </a>
+      </h1>
 
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      <hr/>
-      </div>
-    {% endif %}
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <hr/>
+    </div>
   {% endfor %}
 </div>
