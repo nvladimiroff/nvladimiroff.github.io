@@ -35,7 +35,7 @@ class Video
 end
 ```
 
-A big class gives you a powerful interface for code it but can be easy to get lost in when modifying the class itself. Luckily, this is a perfect problem for mixins! We can split up the class into parts and then mix them into the Video class instead of writing them in there directly:
+A big class gives you a powerful interface for code that uses it, but it can be easy to get lost in when modifying the class itself. Luckily, this is a perfect problem for mixins! We can split up the class into parts and then mix them into the Video class instead of writing them in there directly:
 
 ```ruby
 # src/video/uploadable.rb
