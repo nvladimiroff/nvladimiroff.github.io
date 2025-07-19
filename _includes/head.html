@@ -16,15 +16,12 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
-  <link rel="stylesheet" href="{{ '/public/css/reset.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/cake.css' | absolute_url }}">
-  <link rel="preload" href= "{{ '/public/css/code.css' | absolute_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="{{ '/public/fonts/Pacifico-Regular.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/public/fonts/Nunito-VariableFont_wght.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
-  <noscript><link rel="stylesheet" href="{{ '/public/css/code.css' | absolute_url }}""></noscript>
 
-  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}"> -->
-  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
+  {% css_embed public/css/reset.css %}
+  {% css_embed public/css/cake.css %}
+  {% css_embed public/css/code.css %}
   <style>
     @font-face {
       font-family: 'Pacifico';

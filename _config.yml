@@ -2,7 +2,6 @@
 title:               Code and Cake
 url:                 https://codeandcake.dev
 baseurl:             ''
-paginate:            20
 permalink:           pretty
 
 # About/contact
