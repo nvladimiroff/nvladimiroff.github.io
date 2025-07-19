@@ -18,10 +18,27 @@
 
   <link rel="stylesheet" href="{{ '/public/css/reset.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/cake.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/code.css' | absolute_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
+  <link rel="preload" href= "{{ '/public/css/code.css' | absolute_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ '/public/css/code.css' | absolute_url }}""></noscript>
+
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}"> -->
   <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
+  <style>
+    @font-face {
+      font-family: 'Pacifico';
+      font-style: normal;
+      font-weight: 400;
+      font-display: block;
+      src: url({{ '/public/fonts/Pacifico-Regular.woff2' | absolute_url }}) format('woff2');
+      unicode-range: U+0000-00FF;
+    }
+    @font-face {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 200 1000;
+      font-display: block;
+      src: url({{ '/public/fonts/Nunito-VariableFont_wght.woff2' | absolute_url }}) format('woff2');
+      unicode-range: U+0000-00FF;
+  }
+  </style>
 </head>
