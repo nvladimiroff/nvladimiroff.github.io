@@ -20,6 +20,6 @@ I didn't do any of that here. If you vibe code something, you might get the same
 
 ## Does this matter?
 
-You might say "but this doesn't matter as long as you get the product built." And from a business perspective, you're right! But programming is so much more than building sources of revenue for businesses. It's a _craft_ with a culture and community and skill and creativity.
+You might say "but this doesn't matter as long as you get the product built." And from a business perspective, you're right! But programming is so much more than building sources of revenue for businesses. It's a _craft_ with a culture and community and skill and creativity. All of these things are such an important part of what makes us human.
 
-Maybe businesses would make more money if we all just vibe coded, but turning such a fulfilling craft into a slot machine just so maybe some line goes up a little more is, to me, a tragedy.
+Vibe coding strips all of these away and leaves us with a slot machine that generates business value. Maybe businesses would make more money if we all just vibe coded, but destroying such a fulfilling craft just so maybe some line goes up a little more is, to me, a tragedy.
