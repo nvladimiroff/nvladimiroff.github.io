@@ -54,7 +54,7 @@ body {
   min-height: 100vh;
 
   padding-bottom: 4em;
-  
+
   background-color: white;
 }
 
@@ -135,7 +135,7 @@ code {
 }
 
 .content {
-  max-width: 50ch;
+  max-width: min(50ch, 100vw);
   min-width: 20ch;
   padding: 0 1.2em 0em 1.2em;
   margin: auto;
